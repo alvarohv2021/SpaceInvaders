@@ -222,9 +222,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!61 &90948507
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -356,9 +358,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!61 &113394550
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -530,9 +534,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!61 &168407932
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -749,9 +755,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &209197442
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -923,9 +931,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &226240815
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1097,9 +1107,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &248704562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1271,9 +1283,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &364357335
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1445,9 +1459,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &444002110
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1619,9 +1635,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &451884376
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1793,9 +1811,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &464653458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1922,9 +1942,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!61 &493720319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2237,9 +2259,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &574791350
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2570,9 +2594,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &599137757
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2744,9 +2770,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &641034703
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2958,9 +2986,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!50 &705667093
 Rigidbody2D:
   serializedVersion: 4
@@ -3047,9 +3077,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!61 &831432724
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3221,9 +3253,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!61 &923713537
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3395,9 +3429,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!61 &939199242
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3569,9 +3605,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!61 &1014228611
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3788,9 +3826,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &1014559966
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3962,9 +4002,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &1143644175
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4351,9 +4393,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &1210958305
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4656,9 +4700,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &1248601312
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4825,9 +4871,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!50 &1371979789
 Rigidbody2D:
   serializedVersion: 4
@@ -5004,9 +5052,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &1403209612
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5133,9 +5183,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!61 &1456270934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5307,9 +5359,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!61 &1473070450
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5422,84 +5476,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1480990566
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 6367674158461200371, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6367674158461200371, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_SortingLayerID
-      value: -200831533
-      objectReference: {fileID: 0}
-    - target: {fileID: 6462054665332225023, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 6462054665332225023, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -6.11
-      objectReference: {fileID: 0}
-    - target: {fileID: 6462054665332225023, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6462054665332225023, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6462054665332225023, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6462054665332225023, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6462054665332225023, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6462054665332225023, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6462054665332225023, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6462054665332225023, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7101212320897546458, guid: 65a06651c46487145b30ff8fd0646d40,
-        type: 3}
-      propertyPath: m_Name
-      value: AlienBullet
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
 --- !u!1 &1499950944
 GameObject:
   m_ObjectHideFlags: 0
@@ -5604,9 +5580,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &1499950948
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5778,9 +5756,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &1558703636
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5907,9 +5887,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!61 &1770559630
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6297,9 +6279,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &2009717545
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6426,9 +6410,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!61 &2124465142
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6645,9 +6631,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da20cd9130dd090448ce7c9b1fd45a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
+  _speed: 5
   _shoot: {fileID: 266028469792632283, guid: 65a06651c46487145b30ff8fd0646d40, type: 3}
   _shotInterval: 10
+  _descendDistance: 1
+  _descendSpeed: 1
 --- !u!212 &2127252968
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6754,4 +6742,3 @@ SceneRoots:
   - {fileID: 1403209613}
   - {fileID: 1456270936}
   - {fileID: 1210958306}
-  - {fileID: 1480990566}

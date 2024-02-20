@@ -10,16 +10,18 @@ public class Aline : MonoBehaviour
     Random random = new();
     bool _alienBelow;
     Vector2 _initialPosition;
-    float _destinoXD;
-    float _destinoXI;
-    bool _llegadaDestino = false;
+    float halfScreenWidth = (2f * Camera.main.orthographicSize) * Camera.main.aspect;
+
+    // Variables de estado para el movimiento
+    bool _movingRight = true; // Dirección de movimiento lateral
+    float _lastDescentTime; // Último momento en que los aliens descendieron
 
     void Start()
     {
         _randomShootTime = Time.time + (float)random.NextDouble() * _shotInterval;
         _initialPosition = transform.position;
-        _destinoXD = _initialPosition.x + 4f;
-        _destinoXI = _initialPosition.x - 4f;
+        //TODO: Obtener distancia que se tiene que mover lateralmente
+        //Calcular la distancia de la posicion inical al final de la pantalla
     }
 
     void Update()
@@ -34,7 +36,7 @@ public class Aline : MonoBehaviour
                 Disparar();
             }
         }
-        MoviemientoColemena();
+        //MovimientoColemena();
     }
 
     private void Disparar()
@@ -42,21 +44,9 @@ public class Aline : MonoBehaviour
         _shoot.Spawn(transform.position);
         _randomShootTime = Time.time + (float)random.NextDouble() * _shotInterval;
     }
-    private void MoviemientoColemena()
+
+    private void MovimientoColemena()
     {
-        if (transform.position.x >= _destinoXD && !_llegadaDestino)
-        {
-            Debug.Log("DESTINO ALCANZADO");
-            transform.position = transform.position + new Vector3(0f, -1f, 0f);
-            _llegadaDestino = !_llegadaDestino;
-        }
-        else if (transform.position.x <= _destinoXI && _llegadaDestino)
-        {
-            Debug.Log("DESTINO ALCANZADO");
-            transform.position = transform.position + new Vector3(0f, -1f, 0f);
-            _llegadaDestino = !_llegadaDestino;
-        }
-        transform.position = transform.position + new Vector3(_llegadaDestino ? -1 : +1, 0f, 0f) * Time.deltaTime;
+
     }
 }
-
