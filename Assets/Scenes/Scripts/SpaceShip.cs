@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpaceShip : MonoBehaviour
@@ -10,14 +7,13 @@ public class SpaceShip : MonoBehaviour
     float _horizontal;
     [SerializeField] float _speed = 10f;
     [SerializeField] Shoot _shoot;
-    
+
     //============= Ambas variables sirven para dar un delay entre disparos =============//
     [SerializeField] float _shootRefreshTime = 0.5f;
     float _lastShotTime = 0f;
 
     void Start()
     {
-        gameObject.transform.position = new Vector2(0f, -8f);
         _rigidbody2D = GetComponent<Rigidbody2D>();
     }
 

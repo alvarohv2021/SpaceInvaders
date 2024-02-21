@@ -6,7 +6,7 @@ public class AlienShoot : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D colider)
     {
         Debug.Log("Se activo el trigger");
-        if (colider.gameObject.name.Equals("SpaceShip"))
+        if (colider.gameObject.name.Equals("SpaceShip") || colider.gameObject.CompareTag("Projectile"))
         {
             Destroy(gameObject);
             Destroy(colider.gameObject);

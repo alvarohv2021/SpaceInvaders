@@ -10,7 +10,7 @@ public class Alien : MonoBehaviour
     Random random = new();
     bool _alienBelow;//Con esta variable comprobamos si hay un alien debajo y puede disparar
     BoxCollider2D boxCollider2D;
-    
+
     // Variables de estado para el movimiento
     static bool _movingRight = true; // Dirección de movimiento lateral
     static bool _movingDown = false; // Dirección de movimiento horizontal
@@ -44,22 +44,13 @@ public class Alien : MonoBehaviour
 
     private void MovimientoColemena()
     {
-        if (!_movingDown)
+        float movement = _speed * Time.deltaTime * (_movingRight ? 1 : -1);
+        transform.Translate(Vector3.right * movement);
+        if (AlcanzaronBorde())
         {
-            float movement = _speed * Time.deltaTime * (_movingRight ? 1 : -1);
-            transform.Translate(Vector3.right * movement);
-            if (AlcanzaronBorde())
-            {
-                Debug.Log("Se ha alcanzado el borde");
-                DescenderAllAliens();
-                _movingRight = !_movingRight;
-            }
-        }
-        else
-        {
-            transform.Translate(Vector3.down * Time.deltaTime);
-            _movingDown = false;
-            Debug.Log("Se ha descendido");
+            Debug.Log("Se ha alcanzado el borde");
+            DescenderAllAliens();
+            _movingRight = !_movingRight;
         }
     }
 
@@ -78,12 +69,7 @@ public class Alien : MonoBehaviour
         GameObject[] aliens = GameObject.FindGameObjectsWithTag("Alien");
         foreach (GameObject alien in aliens)
         {
-            alien.GetComponent<Alien>().Descender();
+            alien.transform.Translate(Vector3.down * 1f);
         }
-    }
-
-    public void Descender()
-    {
-        _movingDown = true;
     }
 }
