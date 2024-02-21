@@ -1,27 +1,24 @@
 using UnityEngine;
 using Random = System.Random;
 
-public class Aline : MonoBehaviour
+public class Alien : MonoBehaviour
 {
     [SerializeField] float _speed = 10f;
     [SerializeField] AlienShoot _shoot;
     [SerializeField] float _shotInterval = 5f;
     float _randomShootTime;
     Random random = new();
-    bool _alienBelow;
-    Vector2 _initialPosition;
-    float halfScreenWidth = (2f * Camera.main.orthographicSize) * Camera.main.aspect;
-
+    bool _alienBelow;//Con esta variable comprobamos si hay un alien debajo y puede disparar
+    BoxCollider2D boxCollider2D;
+    
     // Variables de estado para el movimiento
-    bool _movingRight = true; // Dirección de movimiento lateral
-    float _lastDescentTime; // Último momento en que los aliens descendieron
+    static bool _movingRight = true; // Dirección de movimiento lateral
+    static bool _movingDown = false; // Dirección de movimiento horizontal
 
     void Start()
     {
         _randomShootTime = Time.time + (float)random.NextDouble() * _shotInterval;
-        _initialPosition = transform.position;
-        //TODO: Obtener distancia que se tiene que mover lateralmente
-        //Calcular la distancia de la posicion inical al final de la pantalla
+        boxCollider2D = GetComponent<BoxCollider2D>();
     }
 
     void Update()
@@ -36,7 +33,7 @@ public class Aline : MonoBehaviour
                 Disparar();
             }
         }
-        //MovimientoColemena();
+        MovimientoColemena();
     }
 
     private void Disparar()
@@ -47,6 +44,46 @@ public class Aline : MonoBehaviour
 
     private void MovimientoColemena()
     {
+        if (!_movingDown)
+        {
+            float movement = _speed * Time.deltaTime * (_movingRight ? 1 : -1);
+            transform.Translate(Vector3.right * movement);
+            if (AlcanzaronBorde())
+            {
+                Debug.Log("Se ha alcanzado el borde");
+                DescenderAllAliens();
+                _movingRight = !_movingRight;
+            }
+        }
+        else
+        {
+            transform.Translate(Vector3.down * Time.deltaTime);
+            _movingDown = false;
+            Debug.Log("Se ha descendido");
+        }
+    }
 
+
+    // Verifica si los aliens alcanzan un borde
+    private bool AlcanzaronBorde()
+    {
+        float screenWidth = Camera.main.orthographicSize * Camera.main.aspect;
+        float tamañoDeLaNave = boxCollider2D.size.x;
+        float adjustedScreenWidth = screenWidth - (tamañoDeLaNave * 0.5f);
+        float positionX = transform.position.x;
+        return (positionX >= adjustedScreenWidth && _movingRight) || (positionX <= -adjustedScreenWidth && !_movingRight);
+    }
+    private void DescenderAllAliens()
+    {
+        GameObject[] aliens = GameObject.FindGameObjectsWithTag("Alien");
+        foreach (GameObject alien in aliens)
+        {
+            alien.GetComponent<Alien>().Descender();
+        }
+    }
+
+    public void Descender()
+    {
+        _movingDown = true;
     }
 }
