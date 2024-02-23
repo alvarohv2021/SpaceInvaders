@@ -1,3 +1,5 @@
+using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SpaceShip : MonoBehaviour
@@ -5,6 +7,7 @@ public class SpaceShip : MonoBehaviour
     Rigidbody2D _rigidbody2D;
     Vector2 _movement;
     float _horizontal;
+    int _vidas = 3;
     [SerializeField] float _speed = 10f;
     [SerializeField] Shoot _shoot;
 
@@ -51,5 +54,19 @@ public class SpaceShip : MonoBehaviour
         }
 
         _rigidbody2D.velocity = Vector2.right * _horizontal * _speed;
+    }
+
+    void OnTriggerEnter2D()//Se pone OnTrigger porque la bala alien son triggers
+    {
+        if (_vidas > 0)
+        {
+            _vidas--;
+            Debug.Log("Hit");
+        }
+        else
+        {
+            Destroy(gameObject);
+            Debug.Log("Game Over");
+        }
     }
 }
