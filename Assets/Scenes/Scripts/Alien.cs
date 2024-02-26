@@ -13,7 +13,6 @@ public class Alien : MonoBehaviour
 
     // Variables de estado para el movimiento
     static bool _movingRight = true; // Dirección de movimiento lateral
-    static bool _movingDown = false; // Dirección de movimiento horizontal
 
     void Start()
     {
@@ -48,12 +47,10 @@ public class Alien : MonoBehaviour
         transform.Translate(Vector3.right * movement);
         if (AlcanzaronBorde())
         {
-            Debug.Log("Se ha alcanzado el borde");
             DescenderAllAliens();
             _movingRight = !_movingRight;
         }
     }
-
 
     // Verifica si los aliens alcanzan un borde
     private bool AlcanzaronBorde()

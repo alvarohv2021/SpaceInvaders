@@ -12,6 +12,7 @@ public class AlienShoot : MonoBehaviour
     {
         _animator.SetTrigger("hit");
         _bulletSpeed = 0f;
+        
     }
 
     public void Spawn(Vector2 spawnPosition)

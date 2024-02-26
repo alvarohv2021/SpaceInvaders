@@ -11,12 +11,10 @@ public class Barrier : MonoBehaviour
         if (_vidas > 0)
         {
             _vidas--;
-            Debug.Log("Han golpeado " + gameObject.name);
         }
         else
         {
             Destroy(gameObject);
-            Debug.Log("Han destruido " + gameObject.name);
         }
     }
 }
