@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SpaceShip : MonoBehaviour
 {
-    public GameObject _gameOverScreen;
     Rigidbody2D _rigidbody2D;
     Vector2 _movement;
     float _horizontal;
@@ -63,7 +62,6 @@ public class SpaceShip : MonoBehaviour
         if (_vidas > 0)
         {
             _vidas--;
-            Debug.Log("Hit");
         }
         else
         {

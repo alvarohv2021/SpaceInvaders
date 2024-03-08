@@ -5,7 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class ReTryGame : MonoBehaviour
 {
-    public void LoadGame(){
+    public void LoadGame()
+    {
         SceneManager.LoadScene("SampleScene");
+    }
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
